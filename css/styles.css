@@ -751,3 +751,99 @@ body.pro-modal-open {
   justify-content: space-between;
   gap: 1rem;
 }
+
+/* Meet the Founder */
+.founder-portrait img {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.founder-portrait:hover img {
+  transform: scale(1.03);
+}
+
+.founder-quote {
+  animation: founder-quote-in 0.8s ease-out both;
+}
+
+@keyframes founder-quote-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .founder-portrait img,
+  .founder-quote {
+    animation: none;
+    transition: none;
+  }
+
+  .founder-portrait:hover img {
+    transform: none;
+  }
+}
+
+/* Our Professionals visual */
+.pros-visual {
+  animation: pros-visual-in 0.9s ease-out both;
+}
+
+.pros-visual img {
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pros-visual:hover img {
+  transform: scale(1.02);
+}
+
+@keyframes pros-visual-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pros-visual,
+  .pros-visual img {
+    animation: none;
+    transition: none;
+  }
+
+  .pros-visual:hover img {
+    transform: none;
+  }
+}
+
+/* Hero (example_header layout) */
+.hero-glow {
+  background:
+    radial-gradient(circle at 75% 20%, rgba(155, 247, 164, 0.28) 0%, rgba(248, 249, 255, 0) 65%),
+    #f8f9ff;
+}
+
+.arch-curve {
+  position: absolute;
+  width: 480px;
+  height: 240px;
+  border: 1.5px dashed #80da8a;
+  border-bottom: none;
+  border-radius: 260px 260px 0 0;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 1023px) {
+  .arch-curve {
+    display: none;
+  }
+}

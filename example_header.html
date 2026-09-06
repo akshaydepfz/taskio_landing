@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>taaskioo - One Platform. Every Worker. Every Opportunity.</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              },
+              colors: {
+                brand: {
+                  50: '#f0fdf4',
+                  100: '#dcfce7',
+                  500: '#16a34a',
+                  600: '#008744',
+                  700: '#006c35',
+                  800: '#025828',
+                  900: '#013e1c',
+                }
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Custom Layout & Visual Accents -->
+    <style data-purpose="custom-styling">
+        body {
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          overflow-x: hidden;
+          background-color: #fcfdfd;
+        }
+    
+        /* Soft ambient background glow */
+        .hero-glow {
+          background: radial-gradient(circle at 75% 20%, rgba(220, 252, 231, 0.45) 0%, rgba(255, 255, 255, 0) 65%);
+        }
+    
+        /* Subtle dotted curve simulation */
+        .arch-curve {
+          position: absolute;
+          width: 480px;
+          height: 240px;
+          border: 1.5px dashed #86efac;
+          border-bottom: none;
+          border-radius: 260px 260px 0 0;
+          pointer-events: none;
+        }
+      </style>
+    </head>
+    <body class="text-slate-800 antialiased relative min-h-screen hero-glow">
+    <!-- BEGIN: MainHeader -->
+    <header class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+    <!-- Brand Logo & Tagline -->
+    <div class="flex items-center gap-2.5 cursor-pointer">
+    <!-- Abstract Two-Figure / 'ij' Icon -->
+    <div class="flex items-end gap-1">
+    <div class="flex flex-col items-center">
+    <span class="w-2.5 h-2.5 rounded-full bg-[#008744]"></span>
+    <span class="w-3 h-5 bg-[#008744] rounded-t-full rounded-b-md mt-0.5"></span>
+    </div>
+    <div class="flex flex-col items-center">
+    <span class="w-2.5 h-2.5 rounded-full bg-[#004e28]"></span>
+    <span class="w-3.5 h-7 bg-[#004e28] rounded-t-full rounded-b-md mt-0.5"></span>
+    </div>
+    </div>
+    <!-- Textmark and Slogan -->
+    <div class="flex flex-col">
+    <span class="text-2xl font-extrabold tracking-tight text-slate-900 leading-none">taaskioo</span>
+    <span class="text-[9px] font-medium text-slate-500 tracking-tight mt-0.5">One Platform. Every Worker. Every Opportunity.</span>
+    </div>
+    </div>
+    <!-- Navigation Menu Items -->
+    <nav class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-slate-600">
+    <!-- Active Link with Green Underline Indicator -->
+    <div class="relative py-1 text-slate-900 font-semibold">
+    <a class="text-[#008744]" href="#">Home</a>
+    <span class="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#008744] rounded-full"></span>
+    </div>
+    <div class="flex items-center gap-1 hover:text-slate-900 transition-colors cursor-pointer">
+    <span class="">For Workers</span>
+    <svg class="w-3.5 h-3.5 text-slate-400 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div class="flex items-center gap-1 hover:text-slate-900 transition-colors cursor-pointer">
+    <span class="">For Employers</span>
+    <svg class="w-3.5 h-3.5 text-slate-400 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div class="flex items-center gap-1 hover:text-slate-900 transition-colors cursor-pointer">
+    <span class="">Services</span>
+    <svg class="w-3.5 h-3.5 text-slate-400 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <a class="hover:text-slate-900 transition-colors" href="#">About Us</a>
+    <a class="hover:text-slate-900 transition-colors" href="#">Contact Us</a>
+    </nav>
+    <!-- Header Action Buttons -->
+    <div class="flex items-center gap-3">
+    <a class="px-6 py-2 rounded-full border border-slate-300 text-slate-700 font-medium text-sm hover:border-slate-400 transition-all shadow-xs" href="#">
+              Login
+            </a>
+    <a class="px-6 py-2 rounded-full bg-[#006c35] text-white font-medium text-sm hover:bg-[#005a2b] transition-all shadow-sm" href="#">
+              Sign Up
+            </a>
+    </div>
+    </div>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: HeroSection -->
+    <main class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-10 lg:pt-14 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <!-- Left Column: Copy & CTAs -->
+    <div class="lg:col-span-6 z-10">
+    <!-- Platform Badge -->
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-800 text-xs font-semibold tracking-tight mb-6">
+    <span class="text-emerald-600 text-sm leading-none">✦</span>
+              AI-Powered Workforce Platform
+            </div>
+    <!-- Hero Main Heading -->
+    <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-slate-900 leading-[1.12] mb-5">
+              One Platform.<br>
+              Every Worker.<br>
+    <span class="text-[#008744]">Every Opportunity.</span>
+    </h1>
+    <!-- Subtitle -->
+    <p class="text-base text-slate-600 leading-relaxed max-w-lg mb-8">
+              Connecting verified rural and urban professionals with homes, farms, businesses, and industries through one intelligent workforce platform.
+            </p>
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap items-center gap-4 mb-10">
+    <a class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#006c35] text-white font-semibold text-sm hover:bg-[#005629] transition-all shadow-md" href="#">
+    <span class="">Hire Workers</span>
+    <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </a>
+    <a class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white border border-slate-300 text-[#006c35] font-semibold text-sm hover:bg-slate-50 transition-all shadow-xs" href="#">
+    <span class="">Find Jobs</span>
+    <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </a>
+    </div>
+    <!-- Trust Indicators / Value Propositions -->
+    <div class="grid grid-cols-3 gap-3 pt-2 border-t border-slate-100 max-w-md">
+    <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-4 h-4 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <span class="text-xs font-semibold text-slate-700 leading-tight">Verified<br>Professionals</span>
+    </div>
+    <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-4 h-4 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <span class="text-xs font-semibold text-slate-700 leading-tight">Safe &amp;<br>Reliable</span>
+    </div>
+    <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-4 h-4 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.657a9 9 0 01-2.122-4.95m0 0h2.828" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <span class="text-xs font-semibold text-slate-700 leading-tight">24/7<br>Support</span>
+    </div>
+    </div>
+    </div>
+    <!-- Right Column: Visual Composite & Floating Badges -->
+    <div class="lg:col-span-6 relative mt-8 lg:mt-0">
+    <!-- Decorative Arch Graphic -->
+    <div class="arch-curve top-0 left-12"></div>
+    <div class="w-2.5 h-2.5 rounded-full bg-lime-400 absolute top-0 right-32 hidden lg:block"></div>
+    <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute top-10 left-1/2 hidden lg:block"></div>
+    <!-- Main Photographic Composition -->
+    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+    <img alt="Taaskioo Workforce - Verified professionals in agriculture, construction, culinary, and technical fields" class="w-full h-auto object-cover transform scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtBPExbGzBqmZT-JxckRmBqPeFlKv-fzWnjD38QrzI6xgAEXn-Gxaa-wuZIcZdTrIsaFuo9U_iZreMF4CiVY4uUc_GZLm_p2h1Epb3EfHMI0egkipTEezcnxCYimponT2qRBtnRMMfDB2MQzd9yVUxF64_cmoUMsn28NUgNcUflgAH72wQQNEgprElwxa0u3-BBj_uF6NEnRiGVp4msZUfzdhOBHX5n7hfN4U3HAwvA_WJ4DyyJfocpI0u2_6iTxUP1I7_hcQPDXDmjA">
+    <!-- Floating Badge Top Right: 10,000+ Verified Workers -->
+    <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-slate-100 hidden sm:block">
+    <p class="text-xs font-bold text-slate-900 leading-none">10,000+</p>
+    <p class="text-[10px] text-slate-500 mt-0.5 mb-1.5 font-medium">Verified Workers</p>
+    <!-- Overlapping avatar heads -->
+    <div class="flex -space-x-1.5">
+    <span class="inline-block h-5 w-5 rounded-full ring-2 ring-white bg-slate-300 overflow-hidden">
+    <span class="w-full h-full flex items-center justify-center text-[8px] font-bold bg-amber-500 text-white">👨</span>
+    </span>
+    <span class="inline-block h-5 w-5 rounded-full ring-2 ring-white bg-slate-300 overflow-hidden">
+    <span class="w-full h-full flex items-center justify-center text-[8px] font-bold bg-emerald-600 text-white">👩</span>
+    </span>
+    <span class="inline-block h-5 w-5 rounded-full ring-2 ring-white bg-slate-300 overflow-hidden">
+    <span class="w-full h-full flex items-center justify-center text-[8px] font-bold bg-blue-500 text-white">👨‍⚕️</span>
+    </span>
+    <span class="inline-block h-5 w-5 rounded-full ring-2 ring-white bg-slate-300 overflow-hidden">
+    <span class="w-full h-full flex items-center justify-center text-[8px] font-bold bg-purple-600 text-white">👩‍🍳</span>
+    </span>
+    </div>
+    </div>
+    <!-- Floating Badge Middle Left: Trusted by Thousands -->
+    <div class="absolute top-1/2 -translate-y-6 left-4 bg-white/95 backdrop-blur-md rounded-xl py-2 px-3 shadow-lg border border-slate-100 flex items-center gap-2.5">
+    <div class="w-6 h-6 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center text-[#008744]">
+    <svg class="w-3.5 h-3.5 stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div>
+    <p class="text-[11px] font-bold text-slate-800 leading-tight">Trusted</p>
+    <p class="text-[9px] text-slate-500 font-medium">by Thousands</p>
+    </div>
+    </div>
+    <!-- Floating Badge Bottom Right: 5000+ Businesses Onboarded with Sparkline -->
+    <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md rounded-xl py-2.5 px-3.5 shadow-lg border border-slate-100 flex items-center gap-3">
+    <div>
+    <p class="text-xs font-bold text-slate-900 leading-tight">5000+</p>
+    <p class="text-[9px] text-slate-500 font-medium">Businesses<br>Onboarded</p>
+    </div>
+    <!-- Green upward sparkline curve -->
+    <svg class="w-10 h-6 stroke-[#008744] fill-none" viewBox="0 0 40 24">
+    <path d="M2 18 L12 18 L18 10 L26 14 L38 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    </svg>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- BEGIN: FloatingMetricsBar -->
+    <div class="mt-14 w-full bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 p-5 lg:py-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+    <!-- Stat 1: Verified Workers -->
+    <div class="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+    <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-6 h-6 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div>
+    <div class="text-xl font-extrabold text-slate-900 tracking-tight">10,000+</div>
+    <div class="text-xs font-bold text-slate-700">Verified Workers</div>
+    <div class="text-[10px] text-slate-400 font-medium">Skilled. Trusted. Reliable.</div>
+    </div>
+    </div>
+    <!-- Stat 2: Businesses -->
+    <div class="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+    <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-6 h-6 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div>
+    <div class="text-xl font-extrabold text-slate-900 tracking-tight">5,000+</div>
+    <div class="text-xs font-bold text-slate-700">Businesses</div>
+    <div class="text-[10px] text-slate-400 font-medium">From Homes to Industries</div>
+    </div>
+    </div>
+    <!-- Stat 3: Jobs Completed -->
+    <div class="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+    <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-6 h-6 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div>
+    <div class="text-xl font-extrabold text-slate-900 tracking-tight">50,000+</div>
+    <div class="text-xs font-bold text-slate-700">Jobs Completed</div>
+    <div class="text-[10px] text-slate-400 font-medium">Across 100+ Categories</div>
+    </div>
+    </div>
+    <!-- Stat 4: User Rating -->
+    <div class="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+    <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-[#008744] shrink-0 border border-emerald-100">
+    <svg class="w-6 h-6 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    </div>
+    <div>
+    <div class="text-xl font-extrabold text-slate-900 tracking-tight">4.8/5</div>
+    <div class="text-xs font-bold text-slate-700">User Rating</div>
+    <div class="text-[10px] text-slate-400 font-medium">Based on Real Reviews</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- END: FloatingMetricsBar -->
+    </main>
+    <!-- END: HeroSection -->
+    </body></html>
